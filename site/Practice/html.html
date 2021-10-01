@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>HTML</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML</title>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
@@ -40,23 +40,39 @@
   <!-- Creating links -->
     <section>
       <div>Creating links</div>
-      <div>Internal link</div>
-      <div>External link</div>
-      <div>Same page link</div>
+      <a href="links.html" title="Internal link" target="_blank"><div>Internal link</div></a>
+      <a href="https://tiff285.github.io/Testing/site/Studying/f-e.html" target="_blank" title="Link to Front-end"><div>External link</div></a>
+      <a href="#footer" title="Jump to footer"><div>Same page link</div></a>
     </section>
 
   <!-- Displaying images -->
     <section>
       <div>Displaying images</div>
-    
+      <img src="image.png" width="200" height="200" alt="Triangle, circle and square">
     </section>
 
   <!-- Forms -->
     <section>
       <div>Forms</div>
-    
+      <form action="link-to-where-data-goes.php">
+        <div>Name</div>
+        <label for="firstname"><input id="firstname" type="text" placeholder="First name"></label>
+        <label for="lastname"><input id="lastname" type="text" placeholder="Last name"></label><br><br>
+        <div>Nationality</div>
+        <label for="British"><input id="British" type="radio" name="nationality">British</label>
+        <label for="American"><input id="American" type="radio" name="nationality">American</label>
+        <label for="Other"><input id="Other" type="radio" name="nationality">Other</label><br><br>
+        <div>Subjects</div>
+        <label for="maths"><input id="maths" type="checkbox" name="subjects">Maths</label>
+        <label for="english"><input id="english" type="checkbox" name="subjects">English</label>
+        <label for="science"><input id="science" type="checkbox" name="subjects">Science</label><br>
+        <label for="art"><input id="art" type="checkbox" name="subjects">Art</label>
+        <label for="music"><input id="music" type="checkbox" name="subjects">Music</label>
+        <label for="history"><input id="history" type="checkbox" name="subjects">History</label><br><br>
+        <button type="submit">Submit</button>
+      </form>
     </section>
 
-
+  <footer id="footer">Last updated: 2021/10/1</footer>
 </body>
 </html>
