@@ -54,21 +54,21 @@
   <!-- Forms -->
     <section>
       <div>Forms</div>
-      <form action="link-to-where-data-goes.php">
+      <form action="link-to-where-data-goes.html" target="_blank" method="get">
         <div>Name</div>
-        <label for="firstname"><input id="firstname" type="text" placeholder="First name"></label>
-        <label for="lastname"><input id="lastname" type="text" placeholder="Last name"></label><br><br>
+        <label for="fname"><input id="fname" type="text" placeholder="First name" name="fname"></label>
+        <label for="lname"><input id="lname" type="text" placeholder="Last name" name="lname"></label><br><br>
         <div>Nationality</div>
-        <label for="British"><input id="British" type="radio" name="nationality">British</label>
-        <label for="American"><input id="American" type="radio" name="nationality">American</label>
-        <label for="Other"><input id="Other" type="radio" name="nationality">Other</label><br><br>
+        <label for="uk"><input id="uk" type="radio" name="nationality" value="uk">British</label>
+        <label for="us"><input id="us" type="radio" name="nationality" value="us">American</label>
+        <label for="other"><input id="other" type="radio" name="nationality" value="other">Other</label><br><br>
         <div>Subjects</div>
-        <label for="maths"><input id="maths" type="checkbox" name="subjects">Maths</label>
-        <label for="english"><input id="english" type="checkbox" name="subjects">English</label>
-        <label for="science"><input id="science" type="checkbox" name="subjects">Science</label><br>
-        <label for="art"><input id="art" type="checkbox" name="subjects">Art</label>
-        <label for="music"><input id="music" type="checkbox" name="subjects">Music</label>
-        <label for="history"><input id="history" type="checkbox" name="subjects">History</label><br><br>
+        <label for="maths"><input id="maths" type="checkbox" name="subjects" value="mat">Maths</label>
+        <label for="english"><input id="english" type="checkbox" name="subjects" value="eng">English</label>
+        <label for="science"><input id="science" type="checkbox" name="subjects" value="sci">Science</label><br>
+        <label for="art"><input id="art" type="checkbox" name="subjects" value="art">Art</label>
+        <label for="music"><input id="music" type="checkbox" name="subjects" value="mus">Music</label>
+        <label for="history"><input id="history" type="checkbox" name="subjects" value="his">History</label><br><br>
         <button type="submit">Submit</button>
       </form>
     </section>
